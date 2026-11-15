@@ -38,7 +38,7 @@ jobs:
           gradle-version: '8.9'
 
       - name: Build APK
-        run: gradle --no-daemon -p "$PROJECT_DIR" assembleDebug
+        run: gradle --no-daemon -p "$PROJECT_DIR" :app:assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
